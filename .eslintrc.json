@@ -1,0 +1,43 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  // We want to apply as few overrides as possible from the original
+  // configurations. Each override should be commented and explained.
+  "rules": {
+    // the base rule can report incorrect errors in some TypeScript context
+    // use the one provided by @typescript-eslint
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": ["error"],
+    // disable some rules since they are handled by TypeScript
+    "import/no-unresolved": 0,
+    "import/extensions": 0
+  },
+  "overrides": [
+    // We need to override configuration for test files, which are mixed
+    // with source code
+    {
+      "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e-spec.ts"],
+      "plugins": ["jest"],
+      "env": {
+        "jest/globals": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": 0
+      }
+    }
+  ]
+}

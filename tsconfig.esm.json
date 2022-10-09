@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "es6",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "outDir": "dist/esm",
+    "declaration": true,
+    "skipLibCheck": true
+  }
+}

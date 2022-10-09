@@ -1,0 +1,15 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": true
+    },
+    "target": "es2015",
+    "externalHelpers": true
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": true,
+  "sourceMaps": true
+}
