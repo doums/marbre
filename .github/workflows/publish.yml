@@ -15,9 +15,13 @@ jobs:
           node-version: 16
       - name: Install
         run: npm ci
-        run: npm run lint
-        run: npm run typecheck
-        run: npm test
+      - name: Test
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+      - name: Build
+        run: npm run build
       - name: Publish
         run: npm publish
         env:
