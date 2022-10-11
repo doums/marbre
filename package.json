@@ -1,6 +1,6 @@
 {
   "name": "marbre",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure code first GraphQL server",
   "author": "Pierre Dommerc <dommerc.pierre@gmail.com>",
   "type": "module",
