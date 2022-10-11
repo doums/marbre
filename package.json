@@ -2,6 +2,7 @@
   "name": "marbre",
   "version": "1.0.0",
   "description": "Pure code first GraphQL server",
+  "author": "Pierre Dommerc <dommerc.pierre@gmail.com>",
   "type": "module",
   "exports": {
     "import": "./dist/esm/index.js",
@@ -24,7 +25,19 @@
     "typecheck": "tsc --project tsconfig.esm.json --noEmit",
     "test": "jest --passWithNoTests"
   },
-  "author": "Pierre Dommerc <dommerc.pierre@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doums/marbre.git"
+  },
+  "keywords": [
+    "graphql",
+    "code-first",
+    "nexus",
+    "server",
+    "api",
+    "fastify",
+    "apollo-server"
+  ],
   "license": "MPL-2.0",
   "engines": {
     "node": ">=14.16"
